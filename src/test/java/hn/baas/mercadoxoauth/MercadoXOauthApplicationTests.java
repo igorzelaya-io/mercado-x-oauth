@@ -1,10 +1,10 @@
-package hn.baas.marketplaceoauth;
+package hn.baas.mercadoxoauth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MarketplaceOauthApplicationTests {
+class MercadoXOauthApplicationTests {
 
     @Test
     void contextLoads() {
