@@ -1,7 +1,7 @@
 package hn.shadowcore.mercadoxoauth.filter;
 
+import hn.shadowcore.mercadoxcontext.utils.JwtUtil;
 import hn.shadowcore.mercadoxcontext.utils.OrgIdContextHolder;
-import hn.shadowcore.mercadoxoauth.util.JwtUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

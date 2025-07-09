@@ -1,14 +1,15 @@
 package hn.shadowcore.mercadoxoauth.controller;
 
+import hn.shadowcore.mercadoxcontext.utils.JwtUtil;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.UserDetailsImpl;
+import hn.shadowcore.mercadoxlibrary.entity.ports.incoming.RegistrationUseCase;
 import hn.shadowcore.mercadoxlibrary.entity.request.AuthRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.request.RegisterRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.BaseResponseDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.Response;
 import hn.shadowcore.mercadoxoauth.service.AuthService;
-import hn.shadowcore.mercadoxoauth.service.CustomUserDetailsService;
-import hn.shadowcore.mercadoxoauth.util.JwtUtil;
+import hn.shadowcore.mercadoxoauth.service.RegistrationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -32,6 +34,9 @@ public class AuthController {
     private final JwtUtil jwtUtils;
 
     private final AuthService authService;
+
+    private final RegistrationUseCase registrationService;
+
     @PostMapping("/login")
     public ResponseEntity<? extends Response<String>> login(@RequestBody @Valid AuthRequestDto authRequest) {
 
@@ -51,10 +56,21 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<? extends Response<User>> signUp(@RequestBody @Valid RegisterRequestDto registerRequestDto) {
+
         BaseResponseDto<User> baseResponse = new BaseResponseDto<>();
-        //TODO: Send email verification.
         final User createdUser = authService.createUser(registerRequestDto);
+        registrationService.registerUser(createdUser);
         return baseResponse.buildResponseEntity(HttpStatus.CREATED, "User created successfully.", createdUser);
+
+    }
+
+    @PostMapping("/validate")
+    public ResponseEntity<? extends Response<Void>> validate(@RequestParam("validate") final String token) {
+
+        BaseResponseDto<Void> baseResponse = new BaseResponseDto<>();
+        registrationService.validateUser(token);
+        return baseResponse.buildResponseEntity(HttpStatus.OK, "Email was validated successfully.", null);
+
     }
 
 }

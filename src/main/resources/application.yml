@@ -11,7 +11,11 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: true
-
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    bootstrap-servers: localhost:9092
 security:
   jwt:
     secret: "R3vVjK8kL2sP5xMnTbQ1VuZc8AyR3nFwqLpBh9sZ2JY="
