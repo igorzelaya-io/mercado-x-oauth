@@ -9,7 +9,6 @@ import hn.shadowcore.mercadoxlibrary.entity.request.RegisterRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.BaseResponseDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.Response;
 import hn.shadowcore.mercadoxoauth.service.AuthService;
-import hn.shadowcore.mercadoxoauth.service.RegistrationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -65,7 +64,7 @@ public class AuthController {
     }
 
     @PostMapping("/validate")
-    public ResponseEntity<? extends Response<Void>> validate(@RequestParam("validate") final String token) {
+    public ResponseEntity<? extends Response<Void>> validate(@RequestParam final String token) {
 
         BaseResponseDto<Void> baseResponse = new BaseResponseDto<>();
         registrationService.validateUser(token);
