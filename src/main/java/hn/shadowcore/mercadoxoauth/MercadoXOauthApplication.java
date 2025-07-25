@@ -12,7 +12,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableCaching
 @SpringBootApplication
-@ComponentScan(basePackages = "hn.shadowcore.mercadoxcontext.config")
+@ComponentScan(basePackages = {
+        "hn.shadowcore.mercadoxcontext.config",
+        "hn.shadowcore.mercadoxlibrary"
+})
 @EntityScan(basePackages = "hn.shadowcore.mercadoxlibrary")
 @EnableJpaRepositories(basePackages = "hn.shadowcore.mercadoxlibrary.jpa.repository")
 public class MercadoXOauthApplication {

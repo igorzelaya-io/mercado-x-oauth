@@ -31,10 +31,6 @@ public class AuthService {
 
     private final PasswordEncoder passwordEncoder;
 
-    public void sendEmailVerification() {
-        //
-    }
-
     public User createUser(RegisterRequestDto requestDto) {
 
         final UUID orgId = UUID.fromString(requestDto.orgId());

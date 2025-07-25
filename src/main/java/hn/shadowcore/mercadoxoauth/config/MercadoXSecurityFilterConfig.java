@@ -16,6 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
+@Import({JwtAuthFilter.class, OrgIdContextFilter.class})
 public class MercadoXSecurityFilterConfig {
 
     private final JwtAuthFilter jwtAuthFilter;
