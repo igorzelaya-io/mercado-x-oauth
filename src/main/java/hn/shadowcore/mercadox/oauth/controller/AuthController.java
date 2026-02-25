@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadoxoauth.controller;
+package hn.shadowcore.mercadox.oauth.controller;
 
 import hn.shadowcore.mercadoxcontext.utils.JwtUtil;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;
@@ -8,7 +8,7 @@ import hn.shadowcore.mercadoxlibrary.entity.request.AuthRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.request.RegisterRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.BaseResponseDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.Response;
-import hn.shadowcore.mercadoxoauth.service.AuthService;
+import hn.shadowcore.mercadox.oauth.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

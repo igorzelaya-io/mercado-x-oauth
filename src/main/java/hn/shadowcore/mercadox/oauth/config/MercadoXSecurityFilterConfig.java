@@ -1,7 +1,7 @@
-package hn.shadowcore.mercadoxoauth.config;
+package hn.shadowcore.mercadox.oauth.config;
 
-import hn.shadowcore.mercadoxoauth.filter.JwtAuthFilter;
-import hn.shadowcore.mercadoxoauth.filter.OrgIdContextFilter;
+import hn.shadowcore.mercadoxcontext.filter.JwtAuthFilter;
+import hn.shadowcore.mercadoxcontext.filter.OrgIdContextFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

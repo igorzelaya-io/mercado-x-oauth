@@ -1,7 +1,9 @@
-package hn.shadowcore.mercadoxoauth.service;
+package hn.shadowcore.mercadox.oauth.service;
 
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;
-import hn.shadowcore.mercadoxlibrary.entity.model.enums.KafkaTopic;
+import hn.shadowcore.mercadoxlibrary.entity.model.enums.NotificationTemplateName;
+
+import hn.shadowcore.mercadoxlibrary.entity.model.enums.kafka.KafkaTopic;
 import hn.shadowcore.mercadoxlibrary.entity.ports.incoming.RegistrationUseCase;
 import hn.shadowcore.mercadoxlibrary.entity.response.dto.EmailEventDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.dto.EmailRecipientDto;
@@ -59,7 +61,7 @@ public class RegistrationService implements RegistrationUseCase {
         EmailRecipientDto recipientDto = new EmailRecipientDto(user.getFirstName(), user.getEmail());
 
         EmailEventDto<String> verificationEvent = new EmailEventDto<>
-                (UUID.randomUUID(), "Email Confirmation!",
+                ("Email Confirmation!", NotificationTemplateName.USER_VALIDATION_TEMPLATE,
                         List.of(recipientDto), createVerificationToken(user), Instant.now());
 
         kafkaTemplate.send(KafkaTopic.USER_REGISTRATION, verificationEvent);

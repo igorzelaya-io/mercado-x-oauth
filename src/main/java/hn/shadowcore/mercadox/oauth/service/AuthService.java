@@ -1,5 +1,4 @@
-package hn.shadowcore.mercadoxoauth.service;
-
+package hn.shadowcore.mercadox.oauth.service;
 
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.Organization;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.Role;
@@ -53,7 +52,7 @@ public class AuthService {
                     .enabled(false) // Missing email verification
                     .userType(requestDto.userType())
                     .organization(organization)
-                    .userRoles(Set.of())
+                    .userRoles(Set.of(Role.builder().build()))
                     .build();
 
             return userRepository.save(user);

@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadoxoauth.mapper;
+package hn.shadowcore.mercadox.oauth.mapper;
 
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.Role;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;

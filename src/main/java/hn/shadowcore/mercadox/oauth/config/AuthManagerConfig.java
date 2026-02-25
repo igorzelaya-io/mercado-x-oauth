@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadoxoauth.config;
+package hn.shadowcore.mercadox.oauth.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
