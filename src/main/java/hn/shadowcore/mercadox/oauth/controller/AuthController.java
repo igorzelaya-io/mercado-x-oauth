@@ -1,5 +1,6 @@
 package hn.shadowcore.mercadox.oauth.controller;
 
+<<<<<<< Updated upstream
 import hn.shadowcore.mercadoxcontext.utils.JwtUtil;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;
 import hn.shadowcore.mercadoxlibrary.entity.model.auth.UserDetailsImpl;
@@ -9,6 +10,14 @@ import hn.shadowcore.mercadoxlibrary.entity.request.RegisterRequestDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.BaseResponseDto;
 import hn.shadowcore.mercadoxlibrary.entity.response.Response;
 import hn.shadowcore.mercadox.oauth.service.AuthService;
+=======
+import hn.shadowcore.mercadox.library.entity.model.auth.UserDetailsImpl;
+import hn.shadowcore.mercadox.library.entity.ports.incoming.RegistrationUseCase;
+import hn.shadowcore.mercadox.library.entity.request.AuthRequestDto;
+import hn.shadowcore.mercadox.library.entity.response.BaseResponseDto;
+import hn.shadowcore.mercadox.library.entity.response.Response;
+import hn.shadowcore.mercadox.oauth.security.JwtSigner;
+>>>>>>> Stashed changes
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -30,7 +39,7 @@ public class AuthController {
 
     private final AuthenticationManager authenticationManager;
 
-    private final JwtUtil jwtUtils;
+    private final JwtSigner jwtSigner;
 
     private final AuthService authService;
 
@@ -46,7 +55,7 @@ public class AuthController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
 
-        String jwt = jwtUtils.generateToken(userDetails.getUser()); // Email acts as username.
+        String jwt = jwtSigner.generateToken(userDetails.getUser()); // Email acts as username.
 
         BaseResponseDto<String> jwtResponse = new BaseResponseDto<>();
 
