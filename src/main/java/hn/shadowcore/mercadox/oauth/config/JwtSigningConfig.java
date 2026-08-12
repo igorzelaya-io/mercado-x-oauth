@@ -20,7 +20,7 @@ public class JwtSigningConfig {
 
     @Bean
     public JwtSigner jwtSigner(RSAPrivateKey privateKey, JwtSigningProperties properties) {
-        return new JwtSigner(privateKey, properties.expiration());
+        return new JwtSigner(privateKey, properties.expiration(), properties.keyId());
     }
 
 }

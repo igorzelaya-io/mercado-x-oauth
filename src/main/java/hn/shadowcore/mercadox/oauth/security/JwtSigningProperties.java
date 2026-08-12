@@ -9,7 +9,8 @@ import java.time.Duration;
 @ConfigurationProperties(prefix = "security.jwt")
 public record JwtSigningProperties(
         Resource privateKeyLocation,
-        Duration expiration
+        Duration expiration,
+        String keyId
 ) {
 
 }

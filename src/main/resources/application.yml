@@ -26,3 +26,4 @@ security:
     private-key-location: ${JWT_PRIVATE_KEY_LOCATION:file:./secrets/private.pem}
     public-key-location: ${JWT_PUBLIC_KEY_LOCATION:file:./secrets/public.pem}
     expiration: ${JWT_EXPIRATION:1h}
+    key-id: ${JWT_KEY_ID:rsa-1}

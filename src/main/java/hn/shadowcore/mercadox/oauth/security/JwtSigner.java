@@ -9,6 +9,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 public class JwtSigner {
 
@@ -16,13 +17,16 @@ public class JwtSigner {
 
     private final RSAPrivateKey privateKey;
     private final Duration expiration;
+    private final String keyId;
 
     public JwtSigner(
             RSAPrivateKey privateKey,
-            Duration expiration
+            Duration expiration,
+            String keyId
     ) {
         this.privateKey = privateKey;
         this.expiration = expiration;
+        this.keyId = keyId;
     }
 
     public String generateToken(User user) {
@@ -35,12 +39,11 @@ public class JwtSigner {
                 .toList();
 
         return Jwts.builder()
+                .header().keyId(keyId).and()
                 .issuer(ISSUER)
+                .id(UUID.randomUUID().toString())
                 .subject(user.getEmail())
-                .claim(
-                        "orgId",
-                        user.getOrganization().getId().toString()
-                )
+                .claim("orgId", user.getOrganization().getId().toString())
                 .claim("roles", roles)
                 .issuedAt(Date.from(now))
                 .expiration(Date.from(now.plus(expiration)))

@@ -1,23 +1,11 @@
 package hn.shadowcore.mercadox.oauth.controller;
 
-<<<<<<< Updated upstream
-import hn.shadowcore.mercadoxcontext.utils.JwtUtil;
-import hn.shadowcore.mercadoxlibrary.entity.model.auth.User;
-import hn.shadowcore.mercadoxlibrary.entity.model.auth.UserDetailsImpl;
-import hn.shadowcore.mercadoxlibrary.entity.ports.incoming.RegistrationUseCase;
-import hn.shadowcore.mercadoxlibrary.entity.request.AuthRequestDto;
-import hn.shadowcore.mercadoxlibrary.entity.request.RegisterRequestDto;
-import hn.shadowcore.mercadoxlibrary.entity.response.BaseResponseDto;
-import hn.shadowcore.mercadoxlibrary.entity.response.Response;
-import hn.shadowcore.mercadox.oauth.service.AuthService;
-=======
 import hn.shadowcore.mercadox.library.entity.model.auth.UserDetailsImpl;
 import hn.shadowcore.mercadox.library.entity.ports.incoming.RegistrationUseCase;
 import hn.shadowcore.mercadox.library.entity.request.AuthRequestDto;
 import hn.shadowcore.mercadox.library.entity.response.BaseResponseDto;
 import hn.shadowcore.mercadox.library.entity.response.Response;
 import hn.shadowcore.mercadox.oauth.security.JwtSigner;
->>>>>>> Stashed changes
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -41,8 +29,6 @@ public class AuthController {
 
     private final JwtSigner jwtSigner;
 
-    private final AuthService authService;
-
     private final RegistrationUseCase registrationService;
 
     @PostMapping("/login")
@@ -60,16 +46,6 @@ public class AuthController {
         BaseResponseDto<String> jwtResponse = new BaseResponseDto<>();
 
         return jwtResponse.buildResponseEntity(HttpStatus.OK, "User authenticated successfully", jwt);
-    }
-
-    @PostMapping("/register")
-    public ResponseEntity<? extends Response<User>> signUp(@RequestBody @Valid RegisterRequestDto registerRequestDto) {
-
-        BaseResponseDto<User> baseResponse = new BaseResponseDto<>();
-        final User createdUser = authService.createUser(registerRequestDto);
-        registrationService.registerUser(createdUser);
-        return baseResponse.buildResponseEntity(HttpStatus.CREATED, "User created successfully.", createdUser);
-
     }
 
     @PostMapping("/validate")
