@@ -52,7 +52,7 @@ public class AuthService {
                     .enabled(false) // Missing email verification
                     .userType(requestDto.userType())
                     .organization(organization)
-                    .userRoles(Set.of(Role.builder().build()))
+                    .userRoles(Set.of(userRole))
                     .build();
 
             return userRepository.save(user);
