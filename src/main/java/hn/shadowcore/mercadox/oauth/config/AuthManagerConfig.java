@@ -1,6 +1,5 @@
 package hn.shadowcore.mercadox.oauth.config;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -11,7 +10,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @Import(AuthenticationConfiguration.class)
-@ConditionalOnProperty(name = "security.jwt.private-key-location")
 public class AuthManagerConfig {
 
     private final AuthenticationConfiguration authenticationConfiguration;

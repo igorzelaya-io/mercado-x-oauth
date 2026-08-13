@@ -5,7 +5,6 @@ import hn.shadowcore.mercadox.context.filter.TenantValidatorFilter;
 import hn.shadowcore.mercadox.context.security.JwtVerifier;
 import hn.shadowcore.mercadox.context.validator.AnonymousTenantValidator;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -25,7 +24,6 @@ public class MercadoXSecurityFilterConfig {
     private final AnonymousTenantValidator anonymousTenantValidator;
 
     @Bean
-    @ConditionalOnMissingBean(SecurityFilterChain.class)
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http.csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
