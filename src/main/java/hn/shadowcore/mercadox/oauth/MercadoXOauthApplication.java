@@ -5,7 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 @EnableCaching
-@SpringBootApplication(scanBasePackages = "hn.shadowcore.mercadox")
+@SpringBootApplication(scanBasePackages = {
+        "hn.shadowcore.mercadox.context",
+        "hn.shadowcore.mercadox.library"
+})
 public class MercadoXOauthApplication {
 
     public static void main(String[] args) {
