@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: mercado-x-oauth
   datasource:
     url: jdbc:postgresql://localhost:5432/mercado_x
     username: ${DB_USERNAME:postgres}
@@ -17,10 +19,12 @@ spring:
         lob:
           non_contextual_creation: true
   kafka:
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    listener:
+      missing-topics-fatal: false
+kafka:
+  schema-registry-url: ${SCHEMA_REGISTRY_URL:http://localhost:8085}
+
 security:
   jwt:
     private-key-location: ${JWT_PRIVATE_KEY_LOCATION:file:./secrets/private.pem}

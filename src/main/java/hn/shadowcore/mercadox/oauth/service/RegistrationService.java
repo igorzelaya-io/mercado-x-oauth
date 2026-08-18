@@ -1,12 +1,11 @@
 package hn.shadowcore.mercadox.oauth.service;
 
+import hn.shadowcore.mercadox.library.entity.avro.EmailRecipient;
+import hn.shadowcore.mercadox.library.entity.avro.NotificationTemplateName;
+import hn.shadowcore.mercadox.library.entity.avro.UserRegistrationEmailEvent;
 import hn.shadowcore.mercadox.library.entity.model.auth.User;
-import hn.shadowcore.mercadox.library.entity.model.enums.NotificationTemplateName;
-
 import hn.shadowcore.mercadox.library.entity.model.enums.kafka.KafkaTopic;
 import hn.shadowcore.mercadox.library.entity.ports.incoming.RegistrationUseCase;
-import hn.shadowcore.mercadox.library.entity.response.dto.EmailEventDto;
-import hn.shadowcore.mercadox.library.entity.response.dto.EmailRecipientDto;
 import hn.shadowcore.mercadox.library.entity.response.dto.VerificationTokenDto;
 import hn.shadowcore.mercadox.library.jpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -58,13 +57,21 @@ public class RegistrationService implements RegistrationUseCase {
     @Override
     public void registerUser(User user) {
 
-        EmailRecipientDto recipientDto = new EmailRecipientDto(user.getFirstName(), user.getEmail());
+        EmailRecipient recipient = EmailRecipient.newBuilder()
+                .setName(user.getFirstName())
+                .setEmail(user.getEmail())
+                .build();
 
-        EmailEventDto<String> verificationEvent = new EmailEventDto<>
-                ("Email Confirmation!", NotificationTemplateName.USER_VALIDATION_TEMPLATE,
-                        List.of(recipientDto), createVerificationToken(user), Instant.now());
+        UserRegistrationEmailEvent event = UserRegistrationEmailEvent.newBuilder()
+                .setEventId(UUID.randomUUID().toString())
+                .setEventSubject("Email Confirmation!")
+                .setEmailTemplate(NotificationTemplateName.USER_VALIDATION_TEMPLATE)
+                .setRecipients(List.of(recipient))
+                .setPayload(createVerificationToken(user))
+                .setTimestamp(Instant.now())
+                .build();
 
-        kafkaTemplate.send(KafkaTopic.USER_REGISTRATION, verificationEvent);
+        kafkaTemplate.send(KafkaTopic.USER_REGISTRATION, event);
 
     }
 

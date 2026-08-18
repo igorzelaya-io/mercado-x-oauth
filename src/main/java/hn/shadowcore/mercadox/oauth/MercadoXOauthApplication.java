@@ -1,12 +1,14 @@
-package hn.shadowcore.mercadox;
-
+package hn.shadowcore.mercadox.oauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 @EnableCaching
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+        "hn.shadowcore.mercadox.context",
+        "hn.shadowcore.mercadox.library"
+})
 public class MercadoXOauthApplication {
 
     public static void main(String[] args) {
