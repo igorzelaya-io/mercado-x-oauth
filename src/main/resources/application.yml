@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: mercado-x-oauth
   datasource:
     url: jdbc:postgresql://localhost:5432/mercado_x
     username: ${DB_USERNAME:postgres}
