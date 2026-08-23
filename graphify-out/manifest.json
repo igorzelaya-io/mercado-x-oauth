@@ -1,0 +1,97 @@
+{
+  "mvnw": {
+    "mtime": 1741391917.2393048,
+    "ast_hash": "2fe09837c0b4dfabab4c4b206bcd0850",
+    "semantic_hash": "2fe09837c0b4dfabab4c4b206bcd0850"
+  },
+  "pom.xml": {
+    "mtime": 1786573365.9037945,
+    "ast_hash": "d20493909ef7e109a573a8408349647e",
+    "semantic_hash": "d20493909ef7e109a573a8408349647e"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/MercadoXOauthApplication.java": {
+    "mtime": 1786981516.3825603,
+    "ast_hash": "37a908eaef86d7e91ff796f507016eb5",
+    "semantic_hash": "37a908eaef86d7e91ff796f507016eb5"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/config/AuthManagerConfig.java": {
+    "mtime": 1786651016.6169403,
+    "ast_hash": "1d630e147b43ac9f058a11af89532d0d",
+    "semantic_hash": "1d630e147b43ac9f058a11af89532d0d"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/config/JwtSigningConfig.java": {
+    "mtime": 1786651015.9990773,
+    "ast_hash": "176767e7f5e61ca690d4c95ab404e3c6",
+    "semantic_hash": "176767e7f5e61ca690d4c95ab404e3c6"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/config/MercadoXSecurityFilterConfig.java": {
+    "mtime": 1787341217.4839876,
+    "ast_hash": "9a03db4a20cabb78e61db69b2f324039",
+    "semantic_hash": "9a03db4a20cabb78e61db69b2f324039"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/config/OAuthSharedConfiguration.java": {
+    "mtime": 1786572798.3790762,
+    "ast_hash": "9f52794e4438a3b1ce9e4a716987f3b3",
+    "semantic_hash": "9f52794e4438a3b1ce9e4a716987f3b3"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/controller/AuthController.java": {
+    "mtime": 1786573124.6478941,
+    "ast_hash": "67eac8ed6f499f2f39ae7572e75425dd",
+    "semantic_hash": "67eac8ed6f499f2f39ae7572e75425dd"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/controller/RegistrationController.java": {
+    "mtime": 1786572899.976379,
+    "ast_hash": "231aca9118394235620549f62c7b09ed",
+    "semantic_hash": "231aca9118394235620549f62c7b09ed"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/mapper/UserDetailsMapper.java": {
+    "mtime": 1786572899.9766288,
+    "ast_hash": "c977af5e34d520a173351c2acedcccef",
+    "semantic_hash": "c977af5e34d520a173351c2acedcccef"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/security/JwtSigner.java": {
+    "mtime": 1786573386.0367248,
+    "ast_hash": "a051785f0e3c3e52724a69270f0f9998",
+    "semantic_hash": "a051785f0e3c3e52724a69270f0f9998"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/security/JwtSigningProperties.java": {
+    "mtime": 1786573367.4279094,
+    "ast_hash": "36a0792fd0e1abe5f37647aeae31f57b",
+    "semantic_hash": "36a0792fd0e1abe5f37647aeae31f57b"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/security/PrivateKeyUtils.java": {
+    "mtime": 1786572798.3798456,
+    "ast_hash": "75e66f17d6986af4b392cec4ba8ea01d",
+    "semantic_hash": "75e66f17d6986af4b392cec4ba8ea01d"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/service/AuthService.java": {
+    "mtime": 1786572899.9771066,
+    "ast_hash": "f8a91d5ac64b353eb51ca34c18fef68c",
+    "semantic_hash": "f8a91d5ac64b353eb51ca34c18fef68c"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/service/CustomUserDetailsService.java": {
+    "mtime": 1786572899.9775267,
+    "ast_hash": "3f287b024aa2b8dd48989c2409882f17",
+    "semantic_hash": "3f287b024aa2b8dd48989c2409882f17"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/service/OAuthTenantValidatorService.java": {
+    "mtime": 1786645575.5829763,
+    "ast_hash": "d4d0f7a89a0546f15cc6325a566b6655",
+    "semantic_hash": "d4d0f7a89a0546f15cc6325a566b6655"
+  },
+  "src/main/java/hn/shadowcore/mercadox/oauth/service/RegistrationService.java": {
+    "mtime": 1787341007.8643727,
+    "ast_hash": "ae28aeb27a96e4e744fd9aa7e500a95a",
+    "semantic_hash": "ae28aeb27a96e4e744fd9aa7e500a95a"
+  },
+  "src/test/java/hn/shadowcore/mercadox/oauth/MercadoXOauthApplicationTests.java": {
+    "mtime": 1771970794.2776523,
+    "ast_hash": "74a6d3aa2041f2d54088c79fabe4be41",
+    "semantic_hash": "74a6d3aa2041f2d54088c79fabe4be41"
+  },
+  "src/test/java/hn/shadowcore/mercadox/oauth/controller/MercadoXControllerTest.java": {
+    "mtime": 1786651025.786487,
+    "ast_hash": "79393554874950758a3ce83bc77abe17",
+    "semantic_hash": "79393554874950758a3ce83bc77abe17"
+  }
+}

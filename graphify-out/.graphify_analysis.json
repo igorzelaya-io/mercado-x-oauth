@@ -1,0 +1,318 @@
+{
+  "communities": {
+    "0": [
+      "authrequestdto",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_authcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_authcontroller_login",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_authcontroller_validate",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_authenticationmanager",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_postmapping",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_registrationusecase",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_requestmapping",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_response",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_responseentity",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_java_restcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_java_rsaprivatekey",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_java_user",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_jwtsigner",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_jwtsigner_generatetoken",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_jwtsigner_jwtsigner"
+    ],
+    "1": [
+      "grantedauthority",
+      "mapper",
+      "mapping",
+      "role",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper_java_user",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper_userdetailsmapper",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper_userdetailsmapper_maprolestoauthorities",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper_userdetailsmapper_touserdetails",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_customuserdetailsservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_customuserdetailsservice_customuserdetailsservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_customuserdetailsservice_loaduserbyusername",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_java_override",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_java_service",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_java_userrepository",
+      "userdetails",
+      "userdetailsimpl",
+      "userdetailsservice"
+    ],
+    "2": [
+      "configurationproperties",
+      "enableconfigurationproperties",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_java_bean",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_java_configuration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_java_rsaprivatekey",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_jwtsigningconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_jwtsigningconfig_jwtprivatekey",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_jwtsigningconfig_jwtsigningconfig_jwtsigner",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigningproperties",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigningproperties_java_resource",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigningproperties_jwtsigningproperties",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils_java_resource",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils_java_rsaprivatekey",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils_privatekeyutils",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils_privatekeyutils_privatekeyutils",
+      "src_main_java_hn_shadowcore_mercadox_oauth_security_privatekeyutils_privatekeyutils_readprivatekey"
+    ],
+    "3": [
+      "kafkatemplate",
+      "redistemplate",
+      "registrationusecase",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_java_override",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_java_service",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_java_user",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_java_userrepository",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_registrationservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_registrationservice_createverificationtoken",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_registrationservice_registeruser",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_registrationservice_validateuser"
+    ],
+    "4": [
+      "activeprofiles",
+      "autoconfiguremockmvc",
+      "enablecaching",
+      "retention",
+      "springbootapplication",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplication",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplication_mercadoxoauthapplication",
+      "src_main_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplication_mercadoxoauthapplication_main",
+      "src_test_java_hn_shadowcore_mercadox_oauth_controller_mercadoxcontrollertest",
+      "src_test_java_hn_shadowcore_mercadox_oauth_controller_mercadoxcontrollertest_java_springboottest",
+      "src_test_java_hn_shadowcore_mercadox_oauth_controller_mercadoxcontrollertest_mercadoxcontrollertest",
+      "target"
+    ],
+    "5": [
+      "anonymoustenantvalidator",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_oauthsharedconfiguration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_oauthsharedconfiguration_java_configuration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_oauthsharedconfiguration_java_import",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_oauthsharedconfiguration_oauthsharedconfiguration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_java_organizationrepository",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_java_override",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_java_service",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_oauthtenantvalidatorservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_oauthtenantvalidatorservice_oauthtenantvalidatorservice_validate"
+    ],
+    "6": [
+      "authenticationconfiguration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_authmanagerconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_authmanagerconfig_authenticationmanager",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_authmanagerconfig_authmanagerconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_authmanagerconfig_passwordencoder",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_java_authenticationmanager",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_java_bean",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_java_configuration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_java_import",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_java_passwordencoder"
+    ],
+    "7": [
+      "enablewebsecurity",
+      "httpsecurity",
+      "jwtverifier",
+      "securityfilterchain",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_java_anonymoustenantvalidator",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_java_bean",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_java_configuration",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_mercadoxsecurityfilterconfig",
+      "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_mercadoxsecurityfilterconfig_filterchain"
+    ],
+    "8": [
+      "rolerepository",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_authservice",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_authservice_createuser",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_organizationrepository",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_passwordencoder",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_registerrequestdto",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_service",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_user",
+      "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_java_userrepository"
+    ],
+    "9": [
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_postmapping",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_registerrequestdto",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_requestmapping",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_requiredargsconstructor",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_response",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_responseentity",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_restcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_java_user",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_registrationcontroller",
+      "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_registrationcontroller_signup"
+    ],
+    "10": [
+      "mvnw",
+      "mvnw__entry",
+      "mvnw_clean",
+      "mvnw_die",
+      "mvnw_exec_maven",
+      "mvnw_hash_string",
+      "mvnw_native_path",
+      "mvnw_set_java_home",
+      "mvnw_trim",
+      "mvnw_verbose"
+    ],
+    "11": [
+      "src_test_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplicationtests",
+      "src_test_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplicationtests_java_springboottest",
+      "src_test_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplicationtests_mercadoxoauthapplicationtests",
+      "src_test_java_hn_shadowcore_mercadox_oauth_mercadoxoauthapplicationtests_mercadoxoauthapplicationtests_contextloads",
+      "test"
+    ],
+    "12": [
+      "pkg_mercado_x_oauth"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2046783625730994,
+    "1": 0.18128654970760233,
+    "2": 0.19607843137254902,
+    "3": 0.28205128205128205,
+    "4": 0.2727272727272727,
+    "5": 0.25757575757575757,
+    "6": 0.32727272727272727,
+    "7": 0.32727272727272727,
+    "8": 0.32727272727272727,
+    "9": 0.32727272727272727,
+    "10": 0.3333333333333333,
+    "11": 0.6,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_service_registrationservice_registrationservice",
+      "label": "RegistrationService",
+      "degree": 12
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_service_authservice_authservice",
+      "label": "AuthService",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_controller_authcontroller_authcontroller",
+      "label": "AuthController",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigner_jwtsigner",
+      "label": "JwtSigner",
+      "degree": 8
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_config_authmanagerconfig_authmanagerconfig",
+      "label": "AuthManagerConfig",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_config_mercadoxsecurityfilterconfig_mercadoxsecurityfilterconfig",
+      "label": "MercadoXSecurityFilterConfig",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_controller_registrationcontroller_registrationcontroller",
+      "label": "RegistrationController",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_mapper_userdetailsmapper_userdetailsmapper",
+      "label": "UserDetailsMapper",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_service_customuserdetailsservice_customuserdetailsservice",
+      "label": "CustomUserDetailsService",
+      "degree": 7
+    },
+    {
+      "id": "src_main_java_hn_shadowcore_mercadox_oauth_security_jwtsigningproperties_jwtsigningproperties",
+      "label": "JwtSigningProperties",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "RegistrationController",
+      "target": "AuthService",
+      "source_files": [
+        "src/main/java/hn/shadowcore/mercadox/oauth/controller/RegistrationController.java",
+        "src/main/java/hn/shadowcore/mercadox/oauth/service/AuthService.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "RegistrationController",
+      "target": "RegistrationService",
+      "source_files": [
+        "src/main/java/hn/shadowcore/mercadox/oauth/controller/RegistrationController.java",
+        "src/main/java/hn/shadowcore/mercadox/oauth/service/RegistrationService.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "AuthController",
+      "target": "JwtSigner",
+      "source_files": [
+        "src/main/java/hn/shadowcore/mercadox/oauth/controller/AuthController.java",
+        "src/main/java/hn/shadowcore/mercadox/oauth/security/JwtSigner.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "CustomUserDetailsService",
+      "target": "UserDetailsMapper",
+      "source_files": [
+        "src/main/java/hn/shadowcore/mercadox/oauth/service/CustomUserDetailsService.java",
+        "src/main/java/hn/shadowcore/mercadox/oauth/mapper/UserDetailsMapper.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `JwtSigner` connect `AuthController.java` to `JwtSigningConfig.java`?",
+      "why": "High betweenness centrality (0.151) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `AuthService` connect `AuthService.java` to `RegistrationController.java`?",
+      "why": "High betweenness centrality (0.131) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `RegistrationService` connect `RegistrationService` to `RegistrationController.java`?",
+      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `mercado-x-oauth` to the rest of the system?",
+      "why": "1 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
