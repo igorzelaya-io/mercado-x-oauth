@@ -6,6 +6,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @EnableCaching
 @SpringBootApplication(scanBasePackages = {
+        "hn.shadowcore.mercadox.oauth",
         "hn.shadowcore.mercadox.context",
         "hn.shadowcore.mercadox.library"
 })
