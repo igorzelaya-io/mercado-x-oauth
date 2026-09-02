@@ -26,12 +26,15 @@ public class MercadoXSecurityFilterConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http.csrf(AbstractHttpConfigurer::disable)
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .sessionManagement(session -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/v1/public/**", "/api/v1/auth/**").permitAll()
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
                         .anyRequest().authenticated())
-                .addFilterBefore(new TenantValidatorFilter(jwtVerifier, anonymousTenantValidator), UsernamePasswordAuthenticationFilter.class)
-                .addFilterAfter(new JwtAuthFilter(jwtVerifier), TenantValidatorFilter.class).build();
+                .addFilterBefore(new JwtAuthFilter(jwtVerifier), UsernamePasswordAuthenticationFilter.class)
+                .addFilterAfter(new TenantValidatorFilter(anonymousTenantValidator), JwtAuthFilter.class)
+                .build();
     }
 
 }
