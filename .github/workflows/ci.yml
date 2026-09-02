@@ -1,11 +1,9 @@
 name: CI
 
 on:
+  workflow_dispatch:
   pull_request:
-    branches: [main]
   push:
-    branches: [main]
-    tags: ['v*']
 
 permissions:
   contents: read
@@ -13,7 +11,7 @@ permissions:
 
 jobs:
   ci:
-    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@main
+    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@master
     with:
       sonar_host_url: ${{ vars.SONAR_HOST_URL }}
       sonar_organization: ${{ vars.SONAR_ORGANIZATION }}
