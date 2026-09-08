@@ -5,10 +5,10 @@
     <parent>
         <groupId>hn.shadowcore</groupId>
         <artifactId>mercado-x-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>mercado-x-oauth</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>mercado-x-oauth</name>
     <description>mercado-x-oauth</description>
 
@@ -36,13 +36,19 @@
         <dependency>
             <groupId>hn.shadowcore</groupId>
             <artifactId>mercado-x-library-jpa</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hn.shadowcore</groupId>
+            <artifactId>mercado-x-library-entity</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>hn.shadowcore</groupId>
             <artifactId>mercado-x-context</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
@@ -54,7 +60,7 @@
         <dependency>
             <groupId>hn.shadowcore</groupId>
             <artifactId>mercado-x-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
