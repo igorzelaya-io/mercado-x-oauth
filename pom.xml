@@ -36,7 +36,7 @@
         <dependency>
             <groupId>hn.shadowcore</groupId>
             <artifactId>mercado-x-library-jpa</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </dependency>
 
         <dependency>
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>hn.shadowcore</groupId>
             <artifactId>mercado-x-context</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
