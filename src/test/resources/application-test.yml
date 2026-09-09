@@ -1,4 +1,6 @@
 spring:
+  flyway:
+    enabled: false
   kafka:
     bootstrap-servers: localhost:9092
     producer:
@@ -13,6 +15,10 @@ spring:
 mercadox:
   jpa:
     enabled: true
+
+encryption:
+  master-key:
+    value: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=   # test-only fixture key, not a real secret
 
 security:
   jwt:
