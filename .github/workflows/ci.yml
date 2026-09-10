@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   ci:
-    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@master
+    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@5b19a3bd21f6a79c0b2d1f68f95ba22f881fd00c
     with:
       sonar_host_url: ${{ vars.SONAR_HOST_URL }}
       sonar_organization: ${{ vars.SONAR_ORGANIZATION }}
