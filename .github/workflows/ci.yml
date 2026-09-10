@@ -6,12 +6,14 @@ on:
   push:
 
 permissions:
+  checks: read
   contents: read
   packages: write
 
 jobs:
   ci:
-    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@f7c4619068db821b6ee6ff8f213c955150fd8883
+    if: ${{ github.event_name != 'pull_request' || github.head_ref != 'develop' }}
+    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@bc2eceb9f49e152c41873967ca967f87a5943d6f
     with:
       sonar_host_url: ${{ vars.SONAR_HOST_URL }}
       sonar_organization: ${{ vars.SONAR_ORGANIZATION }}
