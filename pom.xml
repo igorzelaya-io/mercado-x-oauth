@@ -8,7 +8,7 @@
         <version>1.0.0</version>
     </parent>
     <artifactId>mercado-x-oauth</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>mercado-x-oauth</name>
     <description>mercado-x-oauth</description>
 
