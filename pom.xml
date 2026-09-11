@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>hn.shadowcore</groupId>
+        <groupId>hn.alturaforge</groupId>
         <artifactId>mercado-x-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>mercado-x-oauth</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
     <name>mercado-x-oauth</name>
     <description>mercado-x-oauth</description>
 
@@ -29,19 +29,26 @@
         <java.version>17</java.version>
         <mapstruct-version>1.5.5.Final</mapstruct-version>
         <lombok-version>1.18.28</lombok-version>
+        <springdoc-openapi-version>2.8.17</springdoc-openapi-version>
     </properties>
     <dependencies>
 
         <dependency>
-            <groupId>hn.shadowcore</groupId>
+            <groupId>hn.alturaforge</groupId>
             <artifactId>mercado-x-library-jpa</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.2</version>
         </dependency>
 
         <dependency>
-            <groupId>hn.shadowcore</groupId>
+            <groupId>hn.alturaforge</groupId>
+            <artifactId>mercado-x-library-entity</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hn.alturaforge</groupId>
             <artifactId>mercado-x-context</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
@@ -51,9 +58,9 @@
         </dependency>
 
         <dependency>
-            <groupId>hn.shadowcore</groupId>
+            <groupId>hn.alturaforge</groupId>
             <artifactId>mercado-x-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -84,6 +91,17 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <!-- Flyway -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -131,6 +149,12 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${springdoc-openapi-version}</version>
         </dependency>
 
     </dependencies>

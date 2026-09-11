@@ -34,3 +34,5 @@ build/
 /secrets/
 
 .DS_Store
+
+/graphify-out/**

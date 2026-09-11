@@ -1,0 +1,26 @@
+package hn.alturaforge.mercadox.oauth.service;
+
+import hn.alturaforge.mercadox.context.validator.AnonymousTenantValidator;
+import hn.alturaforge.mercadox.library.entity.model.auth.Organization;
+import hn.alturaforge.mercadox.library.jpa.repository.OrganizationRepository;
+import jakarta.persistence.EntityNotFoundException;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.UUID;
+
+@Service
+@RequiredArgsConstructor
+public class OAuthTenantValidatorService implements AnonymousTenantValidator {
+
+    private final OrganizationRepository organizationRepository;
+    @Override
+    public boolean validate(String orgId) {
+        return organizationRepository
+                .findById(UUID.fromString(orgId))
+                .map(Organization::getEnabled)
+                .orElseThrow(() -> new EntityNotFoundException
+                        ("Organization was not found or is not active."));
+    }
+
+}
