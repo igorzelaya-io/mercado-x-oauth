@@ -13,7 +13,7 @@ permissions:
 jobs:
   ci:
     if: ${{ github.event_name != 'pull_request' || github.head_ref != 'develop' }}
-    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@dde85e10ddefbff771a6d3ed019a717c8db90475
+    uses: igorzelaya-io/mercado-x-parent/.github/workflows/maven-ci.yml@ee70fa5db941ba227ed946a2d120e89d8e0ac173
     with:
       sonar_host_url: ${{ vars.SONAR_HOST_URL }}
       sonar_organization: ${{ vars.SONAR_ORGANIZATION }}
