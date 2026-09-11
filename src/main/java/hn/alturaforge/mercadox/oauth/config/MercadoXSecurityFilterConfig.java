@@ -1,9 +1,9 @@
-package hn.shadowcore.mercadox.oauth.config;
+package hn.alturaforge.mercadox.oauth.config;
 
-import hn.shadowcore.mercadox.context.filter.JwtAuthFilter;
-import hn.shadowcore.mercadox.context.filter.TenantValidatorFilter;
-import hn.shadowcore.mercadox.context.security.JwtVerifier;
-import hn.shadowcore.mercadox.context.validator.AnonymousTenantValidator;
+import hn.alturaforge.mercadox.context.filter.JwtAuthFilter;
+import hn.alturaforge.mercadox.context.filter.TenantValidatorFilter;
+import hn.alturaforge.mercadox.context.security.JwtVerifier;
+import hn.alturaforge.mercadox.context.validator.AnonymousTenantValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

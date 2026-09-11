@@ -1,13 +1,13 @@
-package hn.shadowcore.mercadox.oauth.service;
+package hn.alturaforge.mercadox.oauth.service;
 
-import hn.shadowcore.mercadox.library.entity.model.auth.Organization;
-import hn.shadowcore.mercadox.library.entity.model.auth.Role;
-import hn.shadowcore.mercadox.library.entity.model.auth.User;
-import hn.shadowcore.mercadox.library.entity.model.enums.RoleName;
-import hn.shadowcore.mercadox.library.entity.request.RegisterRequestDto;
-import hn.shadowcore.mercadox.library.jpa.repository.OrganizationRepository;
-import hn.shadowcore.mercadox.library.jpa.repository.RoleRepository;
-import hn.shadowcore.mercadox.library.jpa.repository.UserRepository;
+import hn.alturaforge.mercadox.library.entity.model.auth.Organization;
+import hn.alturaforge.mercadox.library.entity.model.auth.Role;
+import hn.alturaforge.mercadox.library.entity.model.auth.User;
+import hn.alturaforge.mercadox.library.entity.model.enums.RoleName;
+import hn.alturaforge.mercadox.library.entity.request.RegisterRequestDto;
+import hn.alturaforge.mercadox.library.jpa.repository.OrganizationRepository;
+import hn.alturaforge.mercadox.library.jpa.repository.RoleRepository;
+import hn.alturaforge.mercadox.library.jpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.common.errors.ResourceNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,8 +1,8 @@
-package hn.shadowcore.mercadox.oauth.config;
+package hn.alturaforge.mercadox.oauth.config;
 
-import hn.shadowcore.mercadox.oauth.security.JwtSigner;
-import hn.shadowcore.mercadox.oauth.security.JwtSigningProperties;
-import hn.shadowcore.mercadox.oauth.security.PrivateKeyUtils;
+import hn.alturaforge.mercadox.oauth.security.JwtSigner;
+import hn.alturaforge.mercadox.oauth.security.JwtSigningProperties;
+import hn.alturaforge.mercadox.oauth.security.PrivateKeyUtils;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

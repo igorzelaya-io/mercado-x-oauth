@@ -1,7 +1,7 @@
-package hn.shadowcore.mercadox.oauth.config;
+package hn.alturaforge.mercadox.oauth.config;
 
-import hn.shadowcore.mercadox.context.config.JwtConfig;
-import hn.shadowcore.mercadox.oauth.service.OAuthTenantValidatorService;
+import hn.alturaforge.mercadox.context.config.JwtConfig;
+import hn.alturaforge.mercadox.oauth.service.OAuthTenantValidatorService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

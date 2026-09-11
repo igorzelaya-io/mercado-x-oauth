@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadox.oauth.config;
+package hn.alturaforge.mercadox.oauth.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

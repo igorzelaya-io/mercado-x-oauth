@@ -1,7 +1,7 @@
-package hn.shadowcore.mercadox.oauth.service;
+package hn.alturaforge.mercadox.oauth.service;
 
-import hn.shadowcore.mercadox.library.jpa.repository.UserRepository;
-import hn.shadowcore.mercadox.oauth.mapper.UserDetailsMapper;
+import hn.alturaforge.mercadox.library.jpa.repository.UserRepository;
+import hn.alturaforge.mercadox.oauth.mapper.UserDetailsMapper;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

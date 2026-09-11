@@ -1,11 +1,11 @@
-package hn.shadowcore.mercadox.oauth.controller;
+package hn.alturaforge.mercadox.oauth.controller;
 
-import hn.shadowcore.mercadox.library.entity.model.auth.UserDetailsImpl;
-import hn.shadowcore.mercadox.library.entity.ports.incoming.RegistrationUseCase;
-import hn.shadowcore.mercadox.library.entity.request.AuthRequestDto;
-import hn.shadowcore.mercadox.library.entity.response.BaseResponseDto;
-import hn.shadowcore.mercadox.library.entity.response.Response;
-import hn.shadowcore.mercadox.oauth.security.JwtSigner;
+import hn.alturaforge.mercadox.library.entity.model.auth.UserDetailsImpl;
+import hn.alturaforge.mercadox.library.entity.ports.incoming.RegistrationUseCase;
+import hn.alturaforge.mercadox.library.entity.request.AuthRequestDto;
+import hn.alturaforge.mercadox.library.entity.response.BaseResponseDto;
+import hn.alturaforge.mercadox.library.entity.response.Response;
+import hn.alturaforge.mercadox.oauth.security.JwtSigner;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

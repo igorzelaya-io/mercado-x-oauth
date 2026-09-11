@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadox.oauth.security;
+package hn.alturaforge.mercadox.oauth.security;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.core.io.Resource;

@@ -1,7 +1,7 @@
-package hn.shadowcore.mercadox.oauth.security;
+package hn.alturaforge.mercadox.oauth.security;
 
-import hn.shadowcore.mercadox.library.entity.model.auth.Role;
-import hn.shadowcore.mercadox.library.entity.model.auth.User;
+import hn.alturaforge.mercadox.library.entity.model.auth.Role;
+import hn.alturaforge.mercadox.library.entity.model.auth.User;
 import io.jsonwebtoken.Jwts;
 
 import java.security.interfaces.RSAPrivateKey;
@@ -14,6 +14,8 @@ import java.util.UUID;
 public class JwtSigner {
 
     private static final String ISSUER = "mercadox-oauth";
+    // Must match JwtVerifier's AUDIENCE in mercado-x-context.
+    private static final String AUDIENCE = "mercadox-api";
 
     private final RSAPrivateKey privateKey;
     private final Duration expiration;
@@ -41,6 +43,7 @@ public class JwtSigner {
         return Jwts.builder()
                 .header().keyId(keyId).and()
                 .issuer(ISSUER)
+                .audience().add(AUDIENCE).and()
                 .id(UUID.randomUUID().toString())
                 .subject(user.getEmail())
                 .claim("orgId", user.getOrganization().getId().toString())

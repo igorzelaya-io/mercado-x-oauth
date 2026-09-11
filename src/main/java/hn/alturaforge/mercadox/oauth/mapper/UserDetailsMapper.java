@@ -1,8 +1,8 @@
-package hn.shadowcore.mercadox.oauth.mapper;
+package hn.alturaforge.mercadox.oauth.mapper;
 
-import hn.shadowcore.mercadox.library.entity.model.auth.Role;
-import hn.shadowcore.mercadox.library.entity.model.auth.User;
-import hn.shadowcore.mercadox.library.entity.model.auth.UserDetailsImpl;
+import hn.alturaforge.mercadox.library.entity.model.auth.Role;
+import hn.alturaforge.mercadox.library.entity.model.auth.User;
+import hn.alturaforge.mercadox.library.entity.model.auth.UserDetailsImpl;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.security.core.GrantedAuthority;

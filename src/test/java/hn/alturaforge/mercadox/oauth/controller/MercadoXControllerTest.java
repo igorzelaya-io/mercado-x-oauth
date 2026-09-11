@@ -1,6 +1,6 @@
-package hn.shadowcore.mercadox.oauth.controller;
+package hn.alturaforge.mercadox.oauth.controller;
 
-import hn.shadowcore.mercadox.oauth.MercadoXOauthApplication;
+import hn.alturaforge.mercadox.oauth.MercadoXOauthApplication;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;

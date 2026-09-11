@@ -9,7 +9,7 @@
 - Java 17
 - Maven 3.8+
 - Docker and Docker Compose
-- Access to the GitHub Packages registry for `hn.shadowcore` internal libraries
+- Access to the GitHub Packages registry for `hn.alturaforge` internal libraries
 
 ---
 
@@ -68,7 +68,7 @@ docker exec -i mercadox-postgres psql -U postgres -d mercado_x < /path/to/mercad
 If you only have this repository, obtain `schema.sql` from the published `mercado-x-library-jpa` JAR:
 
 ```bash
-jar xf ~/.m2/repository/hn/shadowcore/mercado-x-library-jpa/1.0.0-SNAPSHOT/mercado-x-library-jpa-1.0.0-SNAPSHOT.jar schema.sql
+jar xf ~/.m2/repository/hn/alturaforge/mercado-x-library-jpa/1.0.0-SNAPSHOT/mercado-x-library-jpa-1.0.0-SNAPSHOT.jar schema.sql
 docker exec -i mercadox-postgres psql -U postgres -d mercado_x < schema.sql
 ```
 

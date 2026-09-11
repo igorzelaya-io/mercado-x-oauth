@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadox.oauth;
+package hn.alturaforge.mercadox.oauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @EnableCaching
 @SpringBootApplication(scanBasePackages = {
-        "hn.shadowcore.mercadox.oauth",
-        "hn.shadowcore.mercadox.context",
-        "hn.shadowcore.mercadox.library"
+        "hn.alturaforge.mercadox.oauth",
+        "hn.alturaforge.mercadox.context",
+        "hn.alturaforge.mercadox.library"
 })
 public class MercadoXOauthApplication {
 

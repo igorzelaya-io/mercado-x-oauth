@@ -1,13 +1,13 @@
-package hn.shadowcore.mercadox.oauth.service;
+package hn.alturaforge.mercadox.oauth.service;
 
-import hn.shadowcore.mercadox.library.entity.avro.EmailRecipient;
-import hn.shadowcore.mercadox.library.entity.avro.NotificationTemplateName;
-import hn.shadowcore.mercadox.library.entity.avro.UserRegistrationEmailEvent;
-import hn.shadowcore.mercadox.library.entity.kafka.KafkaTopic;
-import hn.shadowcore.mercadox.library.entity.model.auth.User;
-import hn.shadowcore.mercadox.library.entity.ports.incoming.RegistrationUseCase;
-import hn.shadowcore.mercadox.library.entity.response.dto.VerificationTokenDto;
-import hn.shadowcore.mercadox.library.jpa.repository.UserRepository;
+import hn.alturaforge.mercadox.library.entity.avro.EmailRecipient;
+import hn.alturaforge.mercadox.library.entity.avro.NotificationTemplateName;
+import hn.alturaforge.mercadox.library.entity.avro.UserRegistrationEmailEvent;
+import hn.alturaforge.mercadox.library.entity.kafka.KafkaTopic;
+import hn.alturaforge.mercadox.library.entity.model.auth.User;
+import hn.alturaforge.mercadox.library.entity.ports.incoming.RegistrationUseCase;
+import hn.alturaforge.mercadox.library.entity.response.dto.VerificationTokenDto;
+import hn.alturaforge.mercadox.library.jpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.common.errors.ResourceNotFoundException;
 import org.springframework.data.redis.core.RedisTemplate;

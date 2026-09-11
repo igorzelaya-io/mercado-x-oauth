@@ -1,4 +1,4 @@
-package hn.shadowcore.mercadox.oauth;
+package hn.alturaforge.mercadox.oauth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
